@@ -52,7 +52,7 @@
 
 ```console
 syrabot@arch:~$ git clone https://github.com/Darkranger00/Syrabot
-syrabot@arch:~$ cd WilliamButcherBot
+syrabot@arch:~$ cd Syrabot
 syrabot@arch:~$ pip3 install -U -r requirements.txt
 syrabot@arch:~$ cp sample_config.py config.py
 ```
