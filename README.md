@@ -20,6 +20,7 @@
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>
 <a href="https://pypi.org/project/Pyrogram/"> <img src="https://img.shields.io/pypi/v/pyrogram?color=yellow&label=pyrogram&logo=python&logoColor=green&style=for-the-badge" /></a>
 <a href="https://Darkranger00/Syrabot/commits/Darkranger00"> <img src="https://img.shields.io/github/last-commit/Darkranger00/Syrabot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
+<a href="https://replit.com/@Darkranger00/TELEGRAMSTRINGSESSION"><img src="https://img.shields.io/replit/String-Session/Darkranger00/TELEGRAMSTRINGSESSION?color=black&logo=replit&logoColor=white&style=for-the-badge" alt="Session"></a> 
 </p>
 
 <h3 align="center">
