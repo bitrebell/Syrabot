@@ -54,7 +54,7 @@ async def start_bot():
     global HELPABLE
 
     for module in ALL_MODULES:
-        imported_module = importlib.import_module("wbb.modules." + module)
+        imported_module = importlib.import_module("syrabot.modules." + module)
         if (
                 hasattr(imported_module, "__MODULE__")
                 and imported_module.__MODULE__
@@ -77,7 +77,7 @@ async def start_bot():
             bot_modules += "|{:<15}".format(i)
         j += 1
     print("+===============================================================+")
-    print("|                              WBB                              |")
+    print("|                             SYRA                              |")
     print("+===============+===============+===============+===============+")
     print(bot_modules)
     print("+===============+===============+===============+===============+")
