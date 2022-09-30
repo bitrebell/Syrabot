@@ -21,10 +21,6 @@
 <a href="https://Darkranger00/Syrabot/commits/Darkranger00"> <img src="https://img.shields.io/github/last-commit/Darkranger00/Syrabot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
 </p>
 
-<p align="center">
-  <img src="https://te.legra.ph/file/c60bde62e81e94b5b91a7.jpg">
-</p>
-
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
 </h3>
@@ -49,7 +45,87 @@
 <p align="center">
 <a href="https://telegram.me/aadilllll"><img src="https://img.shields.io/badge/%20YOUR CRUSH-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
+<h2 align="center"> 
+   ⇝ Install Locally Or On A VPS ⇜
+</h2>
 
+```console
+syrabot@arch:~$ git clone https://github.com/Darkranger00/Syrabot
+syrabot@arch:~$ cd WilliamButcherBot
+syrabot@arch:~$ pip3 install -U -r requirements.txt
+syrabot@arch:~$ cp sample_config.py config.py
+```
+ 
+<h3 align="center"> 
+    Edit <b>config.py</b> with your own values
+</h3>
+
+<h2 align="center"> 
+   ⇝ Run Directly ⇜
+</h2>
+
+```console
+syrabot@arch:~$ python3 -m syrabot
+```
+
+<h3 align="center"> 
+   Generating Pyrogram Session For Heroku
+</h3>
+
+```console
+syrabot@arch:~$ git clone https://github.com/Darkranger00/Syrabot
+syrabot@arch:~$ cd Syrabot
+syrabot@arch:~$ pip3 install pyrogram TgCrypto
+syrabot@arch:~$ python3 str_gen.py
+```
+
+<h1 align="center"> 
+   ⇝ Docker ⇜
+</h1>
+
+```console
+syrabot@arch:~$ git clone https://github.com/Darkranger00/Syrabot
+syrabot@arch:~$ Syrabot
+syrabot@arch:~$ cp sample_config.env config.env
+```
+
+<h3 align="center"> 
+    Edit <b> config.env </b> with your own values
+</h3>
+
+```console
+syrabot@arch:~$ sudo docker build . -t wbb
+syrabot@arch:~$ sudo docker run wbb
+```
+
+<h2 align="center"> 
+   ⇝ Write new modules ⇜
+</h2>
+
+```py
+# Add license text here, get it from below
+
+from syrabot import app # This is bot's client
+from syrabot import app2 # userbot client, import it if module is related to userbot
+from pyrogram import filters # pyrogram filters
+...
+
+
+# For /help menu
+__MODULE__ = "Module Name"
+__HELP__ = "Module help message"
+
+
+@app.on_message(~filters.edited & filters.command("start"))
+async def some_function(_, message):
+    await message.reply_text("Heyy Baby!! I'm already up!!")
+
+# Many useful functions are in, syrabot/utils/, syrabot, and syrabot/core/
+```
+
+<h3 align="center"> 
+   And put that file in syrabot/modules/, restart and test your bot.
+</h3>
 <h3 align="center">
     ─「 ᴄʀᴇᴅɪᴛs 」─
 </h3>

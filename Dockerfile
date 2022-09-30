@@ -1,7 +1,7 @@
-FROM williambutcherbot/python:latest
+FROM syrabot/python:latest
 
-WORKDIR /wbb
-RUN chmod 777 /wbb
+WORKDIR /syrabot
+RUN chmod 777 /syrabot
 
 # Installing Requirements
 RUN pip3 install -U pip
@@ -16,4 +16,4 @@ RUN pip3 install --no-cache-dir -U -r requirements.txt
 COPY . .
 
 # Starting Bot
-CMD ["python3", "-m", "wbb"]
+CMD ["python3", "-m", "syrabot"]
