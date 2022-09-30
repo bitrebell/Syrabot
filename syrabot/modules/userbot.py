@@ -19,10 +19,10 @@ from pyrogram import filters
 from pyrogram.errors import MessageNotModified
 from pyrogram.types import Message, ReplyKeyboardMarkup
 
-from wbb import app2  # don't remove
-from wbb import SUDOERS, USERBOT_PREFIX, app, arq, eor
-from wbb.core.keyboard import ikb
-from wbb.core.tasks import add_task, rm_task
+from syrabot import app2  # don't remove
+from syrabot import SUDOERS, USERBOT_PREFIX, app, arq, eor
+from syrabot.core.keyboard import ikb
+from syrabot.core.tasks import add_task, rm_task
 
 # Eval and Sh module from nana-remix
 

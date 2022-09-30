@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -31,11 +31,11 @@ from traceback import format_exc
 from pyrogram import filters
 from pyrogram.types import Chat, Message
 
-from wbb import LOG_GROUP_ID, SUDOERS, USERBOT_ID, USERBOT_PREFIX
-from wbb import aiohttpsession as session
-from wbb import app, app2
-from wbb.modules.userbot import eor
-from wbb.utils.functions import extract_user
+from syrabot import LOG_GROUP_ID, SUDOERS, USERBOT_ID, USERBOT_PREFIX
+from syrabot import aiohttpsession as session
+from syrabot import app, app2
+from syrabot.modules.userbot import eor
+from syrabot.utils.functions import extract_user
 
 
 @app2.on_message(
@@ -48,7 +48,7 @@ async def change_profile(_, message: Message):
             session.get("https://thispersondoesnotexist.com/image"),
             session.get(
                 "https://raw.githubusercontent.com/dominictarr/"
-                + "random-name/master/first-names.json"
+                + "random-name/main/first-names.json"
             ),
         )
         image = BytesIO(await image_resp.read())

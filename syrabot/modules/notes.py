@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -25,17 +25,17 @@ from re import findall
 
 from pyrogram import filters
 
-from wbb import SUDOERS, USERBOT_ID, USERBOT_PREFIX, app, app2, eor
-from wbb.core.decorators.errors import capture_err
-from wbb.core.decorators.permissions import adminsOnly
-from wbb.core.keyboard import ikb
-from wbb.utils.dbfunctions import (
+from syrabot import SUDOERS, USERBOT_ID, USERBOT_PREFIX, app, app2, eor
+from syrabot.core.decorators.errors import capture_err
+from syrabot.core.decorators.permissions import adminsOnly
+from syrabot.core.keyboard import ikb
+from syrabot.utils.dbfunctions import (
     delete_note,
     get_note,
     get_note_names,
     save_note,
 )
-from wbb.utils.functions import extract_text_and_keyb
+from syrabot.utils.functions import extract_text_and_keyb
 
 __MODULE__ = "Notes"
 __HELP__ = """/notes To Get All The Notes In The Chat.

@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -25,7 +25,7 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, Message
 
-from wbb import (
+from syrabot import (
     BOT_ID,
     LOG_GROUP_ID,
     LOG_MENTIONS,
@@ -35,8 +35,8 @@ from wbb import (
     app,
     app2,
 )
-from wbb.core.decorators.errors import capture_err
-from wbb.utils.filter_groups import taglog_group
+from syrabot.core.decorators.errors import capture_err
+from syrabot.utils.filter_groups import taglog_group
 
 IS_USERBOT_ONLINE = False
 

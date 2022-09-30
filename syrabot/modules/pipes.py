@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -26,8 +26,8 @@ import asyncio
 from pyrogram import filters
 from pyrogram.types import Message
 
-from wbb import BOT_ID, SUDOERS, USERBOT_ID, app, app2
-from wbb.core.decorators.errors import capture_err
+from syrabot import BOT_ID, SUDOERS, USERBOT_ID, app, app2
+from syrabot.core.decorators.errors import capture_err
 
 __MODULE__ = "Pipes"
 __HELP__ = """

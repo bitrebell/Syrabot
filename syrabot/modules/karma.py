@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -25,11 +25,11 @@ import re
 
 from pyrogram import filters
 
-from wbb import app
-from wbb.core.decorators.errors import capture_err
-from wbb.core.decorators.permissions import adminsOnly
-from wbb.core.sections import section
-from wbb.utils.dbfunctions import (
+from syrabot import app
+from syrabot.core.decorators.errors import capture_err
+from syrabot.core.decorators.permissions import adminsOnly
+from syrabot.core.sections import section
+from syrabot.utils.dbfunctions import (
     alpha_to_int,
     get_karma,
     get_karmas,
@@ -39,8 +39,8 @@ from wbb.utils.dbfunctions import (
     karma_on,
     update_karma,
 )
-from wbb.utils.filter_groups import karma_negative_group, karma_positive_group
-from wbb.utils.functions import get_user_id_and_usernames
+from syrabot.utils.filter_groups import karma_negative_group, karma_positive_group
+from syrabot.utils.functions import get_user_id_and_usernames
 
 __MODULE__ = "Karma"
 __HELP__ = """[UPVOTE] - Use upvote keywords like "+", "+1", "thanks" etc to upvote a message.

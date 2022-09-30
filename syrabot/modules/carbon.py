@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -24,9 +24,9 @@ SOFTWARE.
 
 from pyrogram import filters
 
-from wbb import app
-from wbb.core.decorators.errors import capture_err
-from wbb.utils.functions import make_carbon
+from syrabot import app
+from syrabot.core.decorators.errors import capture_err
+from syrabot.utils.functions import make_carbon
 
 
 @app.on_message(

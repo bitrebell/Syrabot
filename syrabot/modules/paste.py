@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -28,10 +28,10 @@ import aiofiles
 from pyrogram import filters
 from pyrogram.types import Message
 
-from wbb import SUDOERS, USERBOT_PREFIX, app, app2, eor
-from wbb.core.decorators.errors import capture_err
-from wbb.core.keyboard import ikb
-from wbb.utils.pastebin import paste
+from syrabot import SUDOERS, USERBOT_PREFIX, app, app2, eor
+from syrabot.core.decorators.errors import capture_err
+from syrabot.core.keyboard import ikb
+from syrabot.utils.pastebin import paste
 
 __MODULE__ = "Paste"
 __HELP__ = "/paste - To Paste Replied Text Or Document To A Pastebin"

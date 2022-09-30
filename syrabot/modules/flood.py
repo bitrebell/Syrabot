@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -33,12 +33,12 @@ from pyrogram.types import (
     Message,
 )
 
-from wbb import SUDOERS, app
-from wbb.core.decorators.errors import capture_err
-from wbb.core.decorators.permissions import adminsOnly
-from wbb.modules.admin import list_admins, member_permissions
-from wbb.utils.dbfunctions import flood_off, flood_on, is_flood_on
-from wbb.utils.filter_groups import flood_group
+from syrabot import SUDOERS, app
+from syrabot.core.decorators.errors import capture_err
+from syrabot.core.decorators.permissions import adminsOnly
+from syrabot.modules.admin import list_admins, member_permissions
+from syrabot.utils.dbfunctions import flood_off, flood_on, is_flood_on
+from syrabot.utils.filter_groups import flood_group
 
 __MODULE__ = "Flood"
 __HELP__ = """

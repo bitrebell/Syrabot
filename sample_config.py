@@ -36,9 +36,9 @@ else:
         4543744343,
         543214651351,
     ]  # Sudo users have full access to everything, don't trust anyone
-    LOG_GROUP_ID = -100125431255
-    GBAN_LOG_GROUP_ID = -100125431255
-    MESSAGE_DUMP_CHAT = -1001181696437
+    LOG_GROUP_ID = -1001864213865
+    GBAN_LOG_GROUP_ID = -1001864213865
+    MESSAGE_DUMP_CHAT = -1001845721190
     WELCOME_DELAY_KICK_SEC = 300
     MONGO_URL = "mongodb+srv://username:password@cluster0.ksiis.mongodb.net/YourDataBaseName?retryWrites=true&w=majority"
     ARQ_API_KEY = "Get this from @ARQRobot"

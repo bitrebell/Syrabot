@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -30,7 +30,7 @@ import psutil
 from pyrogram import filters
 from pyrogram.errors import FloodWait
 
-from wbb import (
+from syrabot import (
     BOT_ID,
     GBAN_LOG_GROUP_ID,
     SUDOERS,
@@ -38,15 +38,15 @@ from wbb import (
     app,
     bot_start_time,
 )
-from wbb.core.decorators.errors import capture_err
-from wbb.utils import formatter
-from wbb.utils.dbfunctions import (
+from syrabot.core.decorators.errors import capture_err
+from syrabot.utils import formatter
+from syrabot.utils.dbfunctions import (
     add_gban_user,
     get_served_chats,
     is_gbanned_user,
     remove_gban_user,
 )
-from wbb.utils.functions import extract_user, extract_user_and_reason, restart
+from syrabot.utils.functions import extract_user, extract_user_and_reason, restart
 
 __MODULE__ = "Sudoers"
 __HELP__ = """

@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -25,11 +25,11 @@ from pyrogram import filters
 from pyrogram.errors.exceptions.bad_request_400 import ChatNotModified
 from pyrogram.types import ChatPermissions
 
-from wbb import SUDOERS, app
-from wbb.core.decorators.errors import capture_err
-from wbb.core.decorators.permissions import adminsOnly
-from wbb.modules.admin import list_admins
-from wbb.utils.functions import get_urls_from_text
+from syrabot import SUDOERS, app
+from syrabot.core.decorators.errors import capture_err
+from syrabot.core.decorators.permissions import adminsOnly
+from syrabot.modules.admin import list_admins
+from syrabot.utils.functions import get_urls_from_text
 
 __MODULE__ = "Locks"
 __HELP__ = """

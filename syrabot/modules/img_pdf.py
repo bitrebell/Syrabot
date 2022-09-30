@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -30,9 +30,9 @@ from PIL import Image
 from pyrogram import filters
 from pyrogram.types import Message
 
-from wbb import app
-from wbb.core.decorators.errors import capture_err
-from wbb.core.sections import section
+from syrabot import app
+from syrabot.core.decorators.errors import capture_err
+from syrabot.core.sections import section
 
 
 async def convert(

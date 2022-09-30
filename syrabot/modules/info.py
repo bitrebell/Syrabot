@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -26,9 +26,9 @@ import os
 from pyrogram import filters
 from pyrogram.types import Message
 
-from wbb import SUDOERS, app
-from wbb.core.sections import section
-from wbb.utils.dbfunctions import is_gbanned_user, user_global_karma
+from syrabot import SUDOERS, app
+from syrabot.core.sections import section
+from syrabot.utils.dbfunctions import is_gbanned_user, user_global_karma
 
 __MODULE__ = "Info"
 __HELP__ = """

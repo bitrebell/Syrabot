@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -26,7 +26,7 @@ from asyncio import gather, sleep
 from pyrogram import filters
 from pyrogram.types import Message
 
-from wbb import (
+from syrabot import (
     BOT_ID,
     SUDOERS,
     USERBOT_ID,
@@ -37,9 +37,9 @@ from wbb import (
     arq,
     eor,
 )
-from wbb.core.decorators.errors import capture_err
-from wbb.utils.filter_groups import chatbot_group
-from wbb.utils.dbfunctions import check_chatbot, add_chatbot, rm_chatbot
+from syrabot.core.decorators.errors import capture_err
+from syrabot.utils.filter_groups import chatbot_group
+from syrabot.utils.dbfunctions import check_chatbot, add_chatbot, rm_chatbot
 
 __MODULE__ = "ChatBot"
 __HELP__ = """

@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -25,7 +25,7 @@ SOFTWARE.
 from pyrogram import filters
 from pyrogram.types import Message
 
-from wbb import USERBOT_ID, USERBOT_PREFIX, app2, eor, log, telegraph
+from syrabot import USERBOT_ID, USERBOT_PREFIX, app2, eor, log, telegraph
 
 __MODULE__ = "Userbot"
 TEXT = """

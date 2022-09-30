@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -32,13 +32,13 @@ from pyrogram.types import (
     Message,
 )
 
-from wbb import app
-from wbb.core.decorators.errors import capture_err
+from syrabot import app
+from syrabot.core.decorators.errors import capture_err
 
 # NOTE: THIS MODULE IS SPECIFICALLY FOR @PatheticRice GROUP, YOU CAN REMOVE IT IN YOUR FORK IF YOU WANT TO
 
-RICE_GROUP = "PatheticRicers"
-RICE_CHANNEL = "RiceGallery"
+RICE_GROUP = "SyraSupport"
+RICE_CHANNEL = "crushlog"
 
 
 @app.on_message(

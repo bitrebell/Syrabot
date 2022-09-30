@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -25,9 +25,9 @@ SOFTWARE.
 from pyrogram import filters
 from pyrogram.raw.functions.messages import DeleteHistory
 
-from wbb import BOT_ID, PM_PERMIT, SUDOERS, USERBOT_ID, USERBOT_PREFIX, app, app2, eor
-from wbb.core.decorators.errors import capture_err
-from wbb.utils.dbfunctions import (
+from syrabot import BOT_ID, PM_PERMIT, SUDOERS, USERBOT_ID, USERBOT_PREFIX, app, app2, eor
+from syrabot.core.decorators.errors import capture_err
+from syrabot.utils.dbfunctions import (
     approve_pmpermit,
     disapprove_pmpermit,
     is_pmpermit_approved,

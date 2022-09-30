@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -30,10 +30,10 @@ from traceback import format_exc
 from pyrogram import filters
 from pyrogram.types import Message
 
-from wbb import SUDOERS, USERBOT_PREFIX, app2, eor
-from wbb.core.sections import section
-from wbb.core.tasks import add_task, rm_task
-from wbb.utils.downloader import download
+from syrabot import SUDOERS, USERBOT_PREFIX, app2, eor
+from syrabot.core.sections import section
+from syrabot.core.tasks import add_task, rm_task
+from syrabot.utils.downloader import download
 
 
 @app2.on_message(

@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -26,9 +26,9 @@ from datetime import datetime
 
 from pyrogram import filters
 
-from wbb import app
-from wbb.core.decorators.errors import capture_err
-from wbb.utils.dbfunctions import get_couple, save_couple
+from syrabot import app
+from syrabot.core.decorators.errors import capture_err
+from syrabot.utils.dbfunctions import get_couple, save_couple
 
 __MODULE__ = "Shippering"
 __HELP__ = "/detect_gay - To Choose Couple Of The Day"

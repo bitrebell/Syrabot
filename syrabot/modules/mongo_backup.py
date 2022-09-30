@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -27,7 +27,7 @@ from os import system as execute
 from pyrogram import filters
 from pyrogram.types import Message
 
-from wbb import MONGO_URL, SUDOERS, app
+from syrabot import MONGO_URL, SUDOERS, app
 
 
 @app.on_message(filters.command("backup") & SUDOERS & ~filters.edited)

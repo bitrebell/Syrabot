@@ -8,17 +8,17 @@ from pyrogram.errors import (
 )
 from pyrogram.types import Message
 
-from wbb import RSS_DELAY, app, log
-from wbb.core.decorators.errors import capture_err
-from wbb.utils.dbfunctions import (
+from syrabot import RSS_DELAY, app, log
+from syrabot.core.decorators.errors import capture_err
+from syrabot.utils.dbfunctions import (
     add_rss_feed,
     get_rss_feeds,
     is_rss_active,
     remove_rss_feed,
     update_rss_feed,
 )
-from wbb.utils.functions import get_http_status_code, get_urls_from_text
-from wbb.utils.rss import Feed
+from syrabot.utils.functions import get_http_status_code, get_urls_from_text
+from syrabot.utils.rss import Feed
 
 __MODULE__ = "RSS"
 __HELP__ = f"""

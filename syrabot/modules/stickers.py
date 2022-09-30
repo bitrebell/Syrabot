@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -37,14 +37,14 @@ from pyrogram.errors import (
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from wbb import BOT_USERNAME, SUDOERS, USERBOT_PREFIX, app, app2, eor
-from wbb.core.decorators.errors import capture_err
-from wbb.utils.files import (
+from syrabot import BOT_USERNAME, SUDOERS, USERBOT_PREFIX, app, app2, eor
+from syrabot.core.decorators.errors import capture_err
+from syrabot.utils.files import (
     get_document_from_file_id,
     resize_file_to_sticker_size,
     upload_document,
 )
-from wbb.utils.stickerset import (
+from syrabot.utils.stickerset import (
     add_sticker_to_set,
     create_sticker,
     create_sticker_set,

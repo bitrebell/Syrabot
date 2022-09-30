@@ -1,10 +1,10 @@
 from pyrogram import filters
 
-from wbb import app
-from wbb.core.decorators.errors import capture_err
-from wbb.core.keyboard import ikb
-from wbb.core.sections import section
-from wbb.utils.http import get
+from syrabot import app
+from syrabot.core.decorators.errors import capture_err
+from syrabot.core.keyboard import ikb
+from syrabot.core.sections import section
+from syrabot.utils.http import get
 
 __MODULE__ = "Crypto"
 __HELP__ = """

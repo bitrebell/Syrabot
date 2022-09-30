@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -27,16 +27,16 @@ from time import time
 from pyrogram import filters
 from pyrogram.types import ChatPermissions
 
-from wbb import SUDOERS, app
-from wbb.core.decorators.errors import capture_err
-from wbb.core.decorators.permissions import adminsOnly
-from wbb.modules.admin import list_admins
-from wbb.utils.dbfunctions import (
+from syrabot import SUDOERS, app
+from syrabot.core.decorators.errors import capture_err
+from syrabot.core.decorators.permissions import adminsOnly
+from syrabot.modules.admin import list_admins
+from syrabot.utils.dbfunctions import (
     delete_blacklist_filter,
     get_blacklisted_words,
     save_blacklist_filter,
 )
-from wbb.utils.filter_groups import blacklist_filters_group
+from syrabot.utils.filter_groups import blacklist_filters_group
 
 __MODULE__ = "Blacklist"
 __HELP__ = """

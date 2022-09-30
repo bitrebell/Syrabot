@@ -26,7 +26,7 @@ import importlib
 import sys
 from os.path import basename, dirname, isfile
 
-from wbb import MOD_LOAD, MOD_NOLOAD
+from syrabot import MOD_LOAD, MOD_NOLOAD
 
 
 def __list_all_modules():

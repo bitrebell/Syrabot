@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -24,10 +24,10 @@ SOFTWARE.
 from pyrogram import filters
 from pyrogram.types import Message
 
-from wbb import BOT_ID, SUDOERS, USERBOT_PREFIX, app2, eor
-from wbb.core.decorators.errors import capture_err
-from wbb.utils.dbfunctions import add_sudo, get_sudoers, remove_sudo
-from wbb.utils.functions import restart
+from syrabot import BOT_ID, SUDOERS, USERBOT_PREFIX, app2, eor
+from syrabot.core.decorators.errors import capture_err
+from syrabot.utils.dbfunctions import add_sudo, get_sudoers, remove_sudo
+from syrabot.utils.functions import restart
 
 __MODULE__ = "Sudo"
 __HELP__ = """

@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -41,11 +41,11 @@ from pyrogram.types import (
     User,
 )
 
-from wbb import SUDOERS, WELCOME_DELAY_KICK_SEC, app
-from wbb.core.decorators.errors import capture_err
-from wbb.core.decorators.permissions import adminsOnly
-from wbb.core.keyboard import ikb
-from wbb.utils.dbfunctions import (
+from syrabot import SUDOERS, WELCOME_DELAY_KICK_SEC, app
+from syrabot.core.decorators.errors import capture_err
+from syrabot.core.decorators.permissions import adminsOnly
+from syrabot.core.keyboard import ikb
+from syrabot.utils.dbfunctions import (
     captcha_off,
     captcha_on,
     del_welcome,
@@ -58,8 +58,8 @@ from wbb.utils.dbfunctions import (
     set_welcome,
     update_captcha_cache,
 )
-from wbb.utils.filter_groups import welcome_captcha_group
-from wbb.utils.functions import extract_text_and_keyb, generate_captcha
+from syrabot.utils.filter_groups import welcome_captcha_group
+from syrabot.utils.functions import extract_text_and_keyb, generate_captcha
 
 __MODULE__ = "Greetings"
 __HELP__ = """

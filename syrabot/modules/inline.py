@@ -2,7 +2,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -25,8 +25,8 @@ SOFTWARE.
 
 import traceback
 
-from wbb import app
-from wbb.utils.inlinefuncs import *
+from syrabot import app
+from syrabot.utils.inlinefuncs import *
 
 __MODULE__ = "Inline"
 __HELP__ = """See inline for help related to inline"""

@@ -3,9 +3,9 @@
 
 from pyrogram import filters
 
-from wbb import app
-from wbb.core.decorators.permissions import adminsOnly
-from wbb.utils.dbfunctions import (
+from syrabot import app
+from syrabot.core.decorators.permissions import adminsOnly
+from syrabot.utils.dbfunctions import (
     antiservice_off,
     antiservice_on,
     is_antiservice_on,

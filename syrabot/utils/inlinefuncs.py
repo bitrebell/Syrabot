@@ -99,7 +99,7 @@ async def inline_help_func(__HELP__):
             input_message_content=InputTextMessageContent(
                 "just one click....for your adventure. for more support contact @SyraSupport"
             ),
-            thumb_url="https://hamker.me/cy00x5x.png",
+            thumb_url="https://te.legra.ph/file/cf00ecd72b3ee934bd87e.jpg",
             reply_markup=buttons,
         ),
         InlineQueryResultArticle(
@@ -108,7 +108,7 @@ async def inline_help_func(__HELP__):
             input_message_content=InputTextMessageContent(
                 "https://github.com/Darkranger00/Syrabot/"
             ),
-            thumb_url="https://hamker.me/gjc9fo3.png",
+            thumb_url="https://te.legra.ph/file/cf00ecd72b3ee934bd87e.jpg",
         ),
     ]
     answerss = await alive_function(answerss)
@@ -140,7 +140,7 @@ async def alive_function(answers):
         InlineQueryResultArticle(
             title="Alive",
             description="Check Bot's Stats",
-            thumb_url="https://static2.aniimg.com/upload/20170515/414/c/d/7/cd7EEF.jpg",
+            thumb_url="https://te.legra.ph/%EF%BC%B9%EF%BC%AFU%EF%BC%B2-%EF%BC%A3%EF%BC%B2U%EF%BC%B3%EF%BC%A8-09-30",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
@@ -444,8 +444,8 @@ async def tg_search_func(answers, text, user_id):
 
 
 async def music_inline_func(answers, query):
-    chat_id = -1001445180719
-    group_invite = "https://t.me/joinchat/vSDE2DuGK4Y4Nzll"
+    chat_id = -1001845721190
+    group_invite = "https://t.me/ugydtd67"
     try:
         messages = [
             m

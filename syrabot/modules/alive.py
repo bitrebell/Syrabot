@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -24,7 +24,7 @@ SOFTWARE.
 
 from pyrogram import filters
 
-from wbb import BOT_ID, SUDOERS, USERBOT_PREFIX, app2
+from syrabot import BOT_ID, SUDOERS, USERBOT_PREFIX, app2
 
 
 @app2.on_message(filters.command("alive", prefixes=USERBOT_PREFIX) & SUDOERS)

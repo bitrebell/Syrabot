@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -27,8 +27,8 @@ from traceback import format_exc
 from pyrogram import filters
 from pyrogram.types import Message
 
-from wbb import SUDOERS, USERBOT_PREFIX, app, app2, arq
-from wbb.core.decorators.errors import capture_err
+from syrabot import SUDOERS, USERBOT_PREFIX, app, app2, arq
+from syrabot.core.decorators.errors import capture_err
 
 __MODULE__ = "Quotly"
 __HELP__ = """

@@ -25,8 +25,8 @@ import os
 
 from pyrogram import filters
 
-from wbb import app
-from wbb.core.decorators.permissions import adminsOnly
+from syrabot import app
+from syrabot.core.decorators.permissions import adminsOnly
 
 __MODULE__ = "Admin Miscs"
 __HELP__ = """

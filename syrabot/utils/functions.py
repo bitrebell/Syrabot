@@ -36,9 +36,9 @@ import speedtest
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from pyrogram.types import Message
 
-from wbb import aiohttpsession as aiosession
-from wbb.utils.dbfunctions import start_restart_stage
-from wbb.utils.http import get, post
+from syrabot import aiohttpsession as aiosession
+from syrabot.utils.dbfunctions import start_restart_stage
+from syrabot.utils.http import get, post
 
 
 async def restart(m: Message):

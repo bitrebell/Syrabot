@@ -34,17 +34,17 @@ from pyrogram.types import (
     Message,
 )
 
-from wbb import BOT_ID, SUDOERS, app, log
-from wbb.core.decorators.errors import capture_err
-from wbb.core.keyboard import ikb
-from wbb.utils.dbfunctions import (
+from syrabot import BOT_ID, SUDOERS, app, log
+from syrabot.core.decorators.errors import capture_err
+from syrabot.core.keyboard import ikb
+from syrabot.utils.dbfunctions import (
     add_warn,
     get_warn,
     int_to_alpha,
     remove_warns,
     save_filter,
 )
-from wbb.utils.functions import (
+from syrabot.utils.functions import (
     extract_user,
     extract_user_and_reason,
     time_converter,

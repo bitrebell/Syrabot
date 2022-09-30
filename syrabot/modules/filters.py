@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -25,18 +25,18 @@ import re
 
 from pyrogram import filters
 
-from wbb import app
-from wbb.core.decorators.errors import capture_err
-from wbb.core.decorators.permissions import adminsOnly
-from wbb.core.keyboard import ikb
-from wbb.utils.dbfunctions import (
+from syrabot import app
+from syrabot.core.decorators.errors import capture_err
+from syrabot.core.decorators.permissions import adminsOnly
+from syrabot.core.keyboard import ikb
+from syrabot.utils.dbfunctions import (
     delete_filter,
     get_filter,
     get_filters_names,
     save_filter,
 )
-from wbb.utils.filter_groups import chat_filters_group
-from wbb.utils.functions import extract_text_and_keyb
+from syrabot.utils.filter_groups import chat_filters_group
+from syrabot.utils.functions import extract_text_and_keyb
 
 __MODULE__ = "Filters"
 __HELP__ = """/filters To Get All The Filters In The Chat.

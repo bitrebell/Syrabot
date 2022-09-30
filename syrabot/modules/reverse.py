@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -33,10 +33,10 @@ from bs4 import BeautifulSoup
 from pyrogram import filters
 from pyrogram.types import InputMediaPhoto, Message
 
-from wbb import MESSAGE_DUMP_CHAT, SUDOERS, USERBOT_PREFIX, app, app2, eor
-from wbb.core.decorators.errors import capture_err
-from wbb.utils.functions import get_file_id_from_message
-from wbb.utils.http import get
+from syrabot import MESSAGE_DUMP_CHAT, SUDOERS, USERBOT_PREFIX, app, app2, eor
+from syrabot.core.decorators.errors import capture_err
+from syrabot.utils.functions import get_file_id_from_message
+from syrabot.utils.http import get
 
 
 async def get_soup(url: str, headers):

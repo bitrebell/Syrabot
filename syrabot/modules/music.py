@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -32,10 +32,10 @@ from pyrogram import filters
 from pytube import YouTube
 from requests import get
 
-from wbb import aiohttpsession as session
-from wbb import app, arq
-from wbb.core.decorators.errors import capture_err
-from wbb.utils.pastebin import paste
+from syrabot import aiohttpsession as session
+from syrabot import app, arq
+from syrabot.core.decorators.errors import capture_err
+from syrabot.utils.pastebin import paste
 
 __MODULE__ = "Music"
 __HELP__ = """

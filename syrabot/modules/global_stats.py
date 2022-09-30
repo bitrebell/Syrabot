@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -26,10 +26,10 @@ import asyncio
 from pyrogram import filters
 from pyrogram.errors import FloodWait
 
-from wbb import BOT_ID, BOT_NAME, SUDOERS, USERBOT_NAME, app, app2
-from wbb.core.decorators.errors import capture_err
-from wbb.modules import ALL_MODULES
-from wbb.utils.dbfunctions import (
+from syrabot import BOT_ID, BOT_NAME, SUDOERS, USERBOT_NAME, app, app2
+from syrabot.core.decorators.errors import capture_err
+from syrabot.modules import ALL_MODULES
+from syrabot.utils.dbfunctions import (
     get_blacklist_filters_count,
     get_filters_count,
     get_gbans_count,
@@ -41,8 +41,8 @@ from wbb.utils.dbfunctions import (
     get_warns_count,
     remove_served_chat,
 )
-from wbb.utils.http import get
-from wbb.utils.inlinefuncs import keywords_list
+from syrabot.utils.http import get
+from syrabot.utils.inlinefuncs import keywords_list
 
 
 @app.on_message(filters.command("clean_db") & ~filters.edited & SUDOERS)
@@ -103,8 +103,8 @@ async def global_stats(_, message):
     karmas_chats_count = _karmas["chats_count"]
 
     # Contributors/Developers count and commits on github
-    url = "https://api.github.com/repos/thehamkercat/williambutcherbot/contributors"
-    rurl = "https://github.com/thehamkercat/williambutcherbot"
+    url = "https://api.github.com/repos/Darkranger00/Syrabot/contributors"
+    rurl = "https://github.com/Darkranger00/Syrabot"
     developers = await get(url)
     commits = 0
     for developer in developers:
