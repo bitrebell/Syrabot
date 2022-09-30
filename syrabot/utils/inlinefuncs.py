@@ -44,7 +44,7 @@ from pyrogram.types import (
 )
 from search_engine_parser import GoogleSearch
 
-from wbb import (
+from syrabot import (
     BOT_USERNAME,
     MESSAGE_DUMP_CHAT,
     SUDOERS,
@@ -55,13 +55,13 @@ from wbb import (
     app2,
     arq,
 )
-from wbb.core.keyboard import ikb
-from wbb.core.tasks import _get_tasks_text, all_tasks, rm_task
-from wbb.core.types import InlineQueryResultCachedDocument
-from wbb.modules.info import get_chat_info, get_user_info
-from wbb.modules.music import download_youtube_audio
-from wbb.utils.functions import test_speedtest
-from wbb.utils.pastebin import paste
+from syrabot.core.keyboard import ikb
+from syrabot.core.tasks import _get_tasks_text, all_tasks, rm_task
+from syrabot.core.types import InlineQueryResultCachedDocument
+from syrabot.modules.info import get_chat_info, get_user_info
+from syrabot.modules.music import download_youtube_audio
+from syrabot.utils.functions import test_speedtest
+from syrabot.utils.pastebin import paste
 
 keywords_list = [
     "image",
