@@ -1,4 +1,4 @@
-FROM williambutcherbot/python:latest
+FROM syrabot/python:latest
 
 WORKDIR /syrabot
 RUN chmod 777 /syrabot
