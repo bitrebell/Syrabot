@@ -30,7 +30,7 @@ from uvloop import install
 from pyrogram import filters, idle
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from wbb import (
+from syrabot import (
     BOT_NAME,
     BOT_USERNAME,
     LOG_GROUP_ID,
@@ -39,11 +39,11 @@ from wbb import (
     app,
     log,
 )
-from wbb.modules import ALL_MODULES
-from wbb.modules.sudoers import bot_sys_stats
-from wbb.utils import paginate_modules
-from wbb.utils.constants import MARKDOWN
-from wbb.utils.dbfunctions import clean_restart_stage
+from syrabot.modules import ALL_MODULES
+from syrabot.modules.sudoers import bot_sys_stats
+from syrabot.utils import paginate_modules
+from syrabot.utils.constants import MARKDOWN
+from syrabot.utils.dbfunctions import clean_restart_stage
 
 loop = asyncio.get_event_loop()
 
