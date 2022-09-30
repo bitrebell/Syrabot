@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -97,7 +97,7 @@ async def inline_help_func(__HELP__):
             title="Inline Commands",
             description="Help Related To Inline Usage.",
             input_message_content=InputTextMessageContent(
-                "Click A Button To Get Started."
+                "just one click....for your adventure. for more support contact @SyraSupport"
             ),
             thumb_url="https://hamker.me/cy00x5x.png",
             reply_markup=buttons,
@@ -106,7 +106,7 @@ async def inline_help_func(__HELP__):
             title="Github Repo",
             description="Get Github Respository Of Bot.",
             input_message_content=InputTextMessageContent(
-                "https://github.com/thehamkercat/WilliamButcherBot"
+                "https://github.com/Darkranger00/Syrabot/"
             ),
             thumb_url="https://hamker.me/gjc9fo3.png",
         ),
@@ -127,7 +127,7 @@ async def alive_function(answers):
     )
 
     msg = f"""
-**[William✨](https://github.com/thehamkercat/WilliamButcherBot):**
+**[Syra✨](https://github.com/Darkranger00/Syrabot):**
 **MainBot:** `{bot_state}`
 **UserBot:** `{ubot_state}`
 **Python:** `{pyver.split()[0]}`
@@ -455,7 +455,7 @@ async def music_inline_func(answers, query):
         ]
     except Exception as e:
         print(e)
-        msg = f"You Need To Join Here With Your Bot And Userbot To Get Cached Music.\n{group_invite}"
+        msg = f"Heyy Baby You Need To Join Here With Your Bot And Userbot To Get Cached Music.For more help contact on @SyraSupport\n{group_invite}"
         answers.append(
             InlineQueryResultArticle(
                 title="ERROR",
@@ -550,7 +550,7 @@ async def speedtest_init(query):
 @app.on_callback_query(filters.regex("test_speedtest"))
 async def test_speedtest_cq(_, cq):
     if cq.from_user.id not in SUDOERS:
-        return await cq.answer("This Isn't For You!")
+        return await cq.answer("Sorry Baby!! This Isn't For You!")
     inline_message_id = cq.inline_message_id
     await app.edit_inline_text(inline_message_id, "**Testing**")
     loop = asyncio.get_running_loop()
@@ -861,7 +861,7 @@ async def cancel_task_button(_, query: CallbackQuery):
     user_id = query.from_user.id
 
     if user_id not in SUDOERS:
-        return await query.answer("This is not for you.")
+        return await query.answer("Sorry Baby!! This is not for you.")
 
     task_id = int(query.data.split("_")[-1])
     await rm_task(task_id)

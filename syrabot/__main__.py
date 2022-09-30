@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -81,8 +81,8 @@ async def start_bot():
     print("+===============+===============+===============+===============+")
     print(bot_modules)
     print("+===============+===============+===============+===============+")
-    log.info(f"BOT STARTED AS {BOT_NAME}!")
-    log.info(f"USERBOT STARTED AS {USERBOT_NAME}!")
+    log.info(f"YEAHH!! BOT STARTED AS {BOT_NAME}!")
+    log.info(f"LET'S START THE USERBOT STARTED AS {USERBOT_NAME}!")
 
     restart_data = await clean_restart_stage()
 
@@ -92,11 +92,11 @@ async def start_bot():
             await app.edit_message_text(
                 restart_data["chat_id"],
                 restart_data["message_id"],
-                "**Restarted Successfully**",
+                "**Come on Baby!! Restarted Successfully**",
             )
 
         else:
-            await app.send_message(LOG_GROUP_ID, "Bot started!")
+            await app.send_message(LOG_GROUP_ID, "SYRA started!")
     except Exception:
         pass
 
@@ -119,7 +119,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
             ),
             InlineKeyboardButton(
                 text="Repo 🛠",
-                url="https://github.com/thehamkercat/WilliamButcherBot",
+                url="https://github.com/Darkranger00/Syrabot/",
             ),
         ],
         [
@@ -128,7 +128,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
                 callback_data="stats_callback",
             ),
             InlineKeyboardButton(
-                text="Support 👨", url="http://t.me/WBBSupport"
+                text="Support 👨", url="http://t.me/SyraSupport"
             ),
         ],
         [
@@ -144,6 +144,8 @@ home_text_pm = (
         f"Hey there! My name is {BOT_NAME}. I can manage your "
         + "group with lots of useful features, feel free to "
         + "add me to your group."
+        + "Just Remember my Creator @aadilllll"
+        + "for more information just text me on @SyraSupport"
 )
 
 keyboard = InlineKeyboardMarkup(
@@ -155,7 +157,7 @@ keyboard = InlineKeyboardMarkup(
             ),
             InlineKeyboardButton(
                 text="Repo 🛠",
-                url="https://github.com/thehamkercat/WilliamButcherBot",
+                url="https://github.com/Darkranger00/Syrabot/",
             ),
         ],
         [
@@ -163,7 +165,7 @@ keyboard = InlineKeyboardMarkup(
                 text="System Stats 💻",
                 callback_data="stats_callback",
             ),
-            InlineKeyboardButton(text="Support 👨", url="t.me/WBBSupport"),
+            InlineKeyboardButton(text="Support 👨", url="t.me/SyraSupport"),
         ],
     ]
 )
@@ -173,7 +175,7 @@ keyboard = InlineKeyboardMarkup(
 async def start(_, message):
     if message.chat.type != "private":
         return await message.reply(
-            "Pm Me For More Details.", reply_markup=keyboard
+            "Come on Baby Let's Talk on Pm Me For More Details.", reply_markup=keyboard
         )
     if len(message.text.split()) > 1:
         name = (message.text.split(None, 1)[1]).lower()
@@ -184,7 +186,7 @@ async def start(_, message):
         elif "_" in name:
             module = name.split("_", 1)[1]
             text = (
-                    f"Here is the help for **{HELPABLE[module].__MODULE__}**:\n"
+                    f"I am Here for Your help and Here is the help for **{HELPABLE[module].__MODULE__}**:\n"
                     + HELPABLE[module].__HELP__
             )
             await message.reply(text, disable_web_page_preview=True)
@@ -212,23 +214,23 @@ async def help_command(_, message):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Click here",
+                                text="Just Do it Baby by Click here",
                                 url=f"t.me/{BOT_USERNAME}?start=help_{name}",
                             )
                         ],
                     ]
                 )
                 await message.reply(
-                    f"Click on the below button to get help about {name}",
+                    f"{name} is ready for your help. If you feel worried Don't worry Baby!! Meet my owner at @SyraSupport",
                     reply_markup=key,
                 )
             else:
                 await message.reply(
-                    "PM Me For More Details.", reply_markup=keyboard
+                    ".", reply_markup=keyboard
                 )
         else:
             await message.reply(
-                "Pm Me For More Details.", reply_markup=keyboard
+                "Just came At my place, I saw You Jannat You are right my PM.", reply_markup=keyboard
             )
     else:
         if len(message.command) >= 2:
@@ -262,10 +264,11 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """Hello {first_name}, My name is {bot_name}.
-I'm a group management bot with some useful features.
+        """Hello {first_name} Baby!!, My name is {bot_name}.
+I'm a much horny and powerful group management bot with some useful features.
 You can choose an option below, by clicking a button.
-Also you can ask anything in Support Group.
+Also you can ask anything in my Support Group @SyraSupport.
+Or may be Met with My Owner @aadilllll
 """.format(
             first_name=name,
             bot_name=BOT_NAME,
@@ -301,10 +304,11 @@ async def help_button(client, query):
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
     top_text = f"""
-Hello {query.from_user.first_name}, My name is {BOT_NAME}.
-I'm a group management bot with some usefule features.
+Hello {query.from_user.first_name} Baby!!, My name is {BOT_NAME}.
+I'm a much horny and powerful group management bot with some useful features.
 You can choose an option below, by clicking a button.
-Also you can ask anything in Support Group.
+Also you can ask anything in my Support Group @SyraSupport.
+Or may be Met with My Owner @aadilllll .
 
 General command are:
  - /start: Start the bot

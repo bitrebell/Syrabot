@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2021 TheHamkerCat
+Copyright (c) 2021 Darkranger00
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -105,7 +105,7 @@ async def member_permissions(chat_id: int, user_id: int):
     return perms
 
 
-from wbb.core.decorators.permissions import adminsOnly
+from syrabot.core.decorators.permissions import adminsOnly
 
 admins_in_chat = {}
 
@@ -157,7 +157,7 @@ async def purgeFunc(_, message: Message):
     await message.delete()
 
     if not repliedmsg:
-        return await message.reply_text("Reply to a message to purge from.")
+        return await message.reply_text("Let's clean this shit.....Reply to a message to purge from.")
 
     cmd = message.command
     if len(cmd) > 1 and cmd[1].isdigit():
@@ -209,7 +209,7 @@ async def kickFunc(_, message: Message):
         return await message.reply_text("I can't find that user.")
     if user_id == BOT_ID:
         return await message.reply_text(
-            "I can't kick myself, i can leave if you want."
+            "SORRY!! Babes I can't kick myself, i can leave if you want or You have an issue please cntact on @SyraSupport"
         )
     if user_id in SUDOERS:
         return await message.reply_text("You Wanna Kick The Elevated One?")
@@ -221,7 +221,7 @@ async def kickFunc(_, message: Message):
     msg = f"""
 **Kicked User:** {mention}
 **Kicked By:** {message.from_user.mention if message.from_user else 'Anon'}
-**Reason:** {reason or 'No Reason Provided.'}"""
+**Reason:** {reason or 'I throw him out but you dont give me reason.'}"""
     if message.command[0][0] == "d":
         await message.reply_to_message.delete()
     await message.chat.ban_member(user_id)
@@ -243,10 +243,10 @@ async def banFunc(_, message: Message):
     user_id, reason = await extract_user_and_reason(message, sender_chat=True)
 
     if not user_id:
-        return await message.reply_text("I can't find that user.")
+        return await message.reply_text("i Can't find the user.")
     if user_id == BOT_ID:
         return await message.reply_text(
-            "I can't ban myself, i can leave if you want."
+            "SORRY!! BabesI can't ban myself, i can leave if you want."
         )
     if user_id in SUDOERS:
         return await message.reply_text(
@@ -316,7 +316,7 @@ async def unban_func(_, message: Message):
         user = message.reply_to_message.from_user.id
     else:
         return await message.reply_text(
-            "Provide a username or reply to a user's message to unban."
+            "just Provide a username or reply to a user's message to unban and then i came her back."
         )
     await message.chat.unban_member(user)
     umention = (await app.get_users(user)).mention
@@ -351,7 +351,7 @@ async def list_ban_(c, message: Message):
         return await message.reply_text("Invalid message link provided")
 
     if userid == BOT_ID:
-        return await message.reply_text("I can't ban myself.")
+        return await message.reply_text("it's wrong I can't ban myself.If you have issue met my owner @aadilllll")
     if userid in SUDOERS:
         return await message.reply_text(
             "You Wanna Ban The Elevated One?, RECONSIDER!"
@@ -468,7 +468,7 @@ async def promoteFunc(_, message: Message):
     if user_id == BOT_ID:
         return await message.reply_text("I can't promote myself.")
     if not bot.can_promote_members:
-        return await message.reply_text("I don't have enough permissions")
+        return await message.reply_text("Baby First give me permission I don'have rights to do it")
     if message.command[0][0] == "f":
         await message.chat.promote_member(
             user_id=user_id,
@@ -481,7 +481,7 @@ async def promoteFunc(_, message: Message):
             can_manage_chat=bot.can_manage_chat,
             can_manage_voice_chats=bot.can_manage_voice_chats,
         )
-        return await message.reply_text(f"Fully Promoted! {umention}")
+        return await message.reply_text(f"Yeahh!! Let's make a Party you are Fully Promoted! {umention}")
 
     await message.chat.promote_member(
         user_id=user_id,
@@ -494,7 +494,7 @@ async def promoteFunc(_, message: Message):
         can_manage_chat=bot.can_manage_chat,
         can_manage_voice_chats=bot.can_manage_voice_chats,
     )
-    await message.reply_text(f"Promoted! {umention}")
+    await message.reply_text(f"Woahh!! You Are Promoted! {umention}")
 
 
 # Demote Member
@@ -524,7 +524,7 @@ async def demote(_, message: Message):
         can_manage_voice_chats=False,
     )
     umention = (await app.get_users(user_id)).mention
-    await message.reply_text(f"Demoted! {umention}")
+    await message.reply_text(f"Don't be Rubbish with power and You are succesful Demoted! {umention}")
 
 
 # Pin Messages
@@ -549,7 +549,7 @@ async def pin(_, message: Message):
         f"**Pinned [this]({r.link}) message.**",
         disable_web_page_preview=True,
     )
-    msg = "Please check the pinned message: ~ " + f"[Check, {r.link}]"
+    msg = "I pluged it at top just have a Loop !!!: ~ " + f"[Check, {r.link}]"
     filter_ = dict(type="text", data=msg)
     await save_filter(message.chat.id, "~pinned", filter_)
 
@@ -710,7 +710,7 @@ async def remove_warning(_, cq: CallbackQuery):
     permission = "can_restrict_members"
     if permission not in permissions:
         return await cq.answer(
-            "You don't have enough permissions to perform this action.\n"
+            "Sorry Buddy You don't have enough permissions to perform this action or i callthe admins.\n"
             + f"Permission needed: {permission}",
             show_alert=True,
         )
@@ -719,7 +719,7 @@ async def remove_warning(_, cq: CallbackQuery):
     if warns:
         warns = warns["warns"]
     if not warns or warns == 0:
-        return await cq.answer("User has no warnings.")
+        return await cq.answer("doesn't have warning, so be free.")
     warn = {"warns": warns - 1}
     await add_warn(chat_id, await int_to_alpha(user_id), warn)
     text = cq.message.text.markdown
