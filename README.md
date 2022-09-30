@@ -95,8 +95,8 @@ syrabot@arch:~$ cp sample_config.env config.env
 </h3>
 
 ```console
-syrabot@arch:~$ sudo docker build . -t wbb
-syrabot@arch:~$ sudo docker run wbb
+syrabot@arch:~$ sudo docker build . -t syrabot
+syrabot@arch:~$ sudo docker run syrabot
 ```
 
 <h2 align="center"> 
