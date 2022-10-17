@@ -1,4 +1,4 @@
-FROM darkranger00/syrabot
+FROM python:3.10.7-slim-buster
 
 RUN apt update && apt upgrade -y
 RUN apt install git curl python3-pip -y
