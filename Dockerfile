@@ -1,4 +1,4 @@
-FROM darkranger00/Syrabot
+FROM darkranger00/syrabot
 
 RUN apt update && apt upgrade -y
 RUN apt install git curl python3-pip -y
